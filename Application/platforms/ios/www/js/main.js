@@ -200,8 +200,8 @@ document.addEventListener("deviceready", onDeviceReady, false);
 
 
 
-	// onDeviceReady - PhoneGap check
-	function onDeviceReady() {
+// onDeviceReady - PhoneGap check
+function onDeviceReady() {
 
 	console.log("PhoneGap Device Ready!");
 
