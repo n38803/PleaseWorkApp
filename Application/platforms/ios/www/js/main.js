@@ -14,8 +14,6 @@ console.log("JQUERY Page Init");
 
 	var instaPopulate = function(){
 
-		alert("Populating Instagram Results...");
-
 		// $('#instaList').remove();
 
 	    $.ajax({
@@ -33,8 +31,7 @@ console.log("JQUERY Page Init");
         	} // end success function
         	
         }); // end ajax call
-    	
-  	
+
   	}; // end instagram populate 
 
 	var theSubmit = function(){
@@ -117,12 +114,12 @@ document.addEventListener("deviceready", onDeviceReady, false);
 
     }; // end sound dismiss 
 
-	function compassSuccess(direction) {
-    	$('#directions').html("You Are Heading: " + direction);
+	function cSuccess(heading) {
+    	$('#directions').html("You Are Heading: " + heading.magneticHeading);
     }; // end success function
 
-	function compassError() {
-       	alert('onError!');
+	function cError(compassError) {
+       	alert('Error: ' + compassError.code);
     }; // end error function	
  
  
@@ -130,13 +127,14 @@ document.addEventListener("deviceready", onDeviceReady, false);
 //-[ Native Library - Variables ]---------------------------------------------------------
 
 	var sCompass = function() {
-
+		alert('Compass Function Started!');
 		var options = { frequency: 3000 };
-        watchID = navigator.compass.watchHeading(compassSuccess, compassError, options);
+        watchID = navigator.compass.watchHeading(cSuccess, cError);
 
 	}; // end Start compass function
 
 	var eCompass = function() {
+		alert('Compass Function Ended!');
 		if (watchID) {
             navigator.compass.clearWatch(watchID);
             watchID = null;
@@ -163,26 +161,32 @@ document.addEventListener("deviceready", onDeviceReady, false);
 	}; // end connections function
 
 	var beep = function() {
-
-		console.log("Sound Notification");
        	
-       	navigator.notification.alert('You have enabled Sound Notifications!', soundDismiss, 'ALERT!', 'Dismiss'); 
+       	navigator.notification.alert(
+       		'You have enabled Sound Alerts!',
+       	 	'ALERT', 
+       	 	'Dismiss'
+       	 );  // end notification alert
+       	 
 		navigator.notification.beep(3);
 
 	};// end sound notifications function 
 
 	var vibrate = function() {
 
-		console.log("Vibrate Notification");
+       	navigator.notification.alert(
+       		'You have enabled Vibration!',
+       	 	'ALERT', 
+       	 	'Dismiss'
+       	 );  // end notification alert
        	
-       	navigator.notification.alert('You have enabled Vibration!', vibrateDismiss, 'ALERT!', 'Dismiss'); 
        	navigator.notification.vibrate(2000);
 
 	};// end vibration notifications function 
                     	
 	var loadInfo = function () {
 		$("#d-type").html(
-			"<li>Device Name: <em>" + device.name + "</em></li>" +
+			"<li>Device Name: <em>" + device.model + "</em></li>" +
 			"<li>Platform Type: <em>" + device.platform + "</em></li>" +
 			"<li>Device UUID: <em>" + device.uuid + "</em></li>" +
 			"<li>Version Info: <em>" + device.version + "</em></li>"

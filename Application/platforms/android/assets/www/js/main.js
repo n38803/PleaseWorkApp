@@ -14,8 +14,6 @@ console.log("JQUERY Page Init");
 
 	var instaPopulate = function(){
 
-		alert("Populating Instagram Results...");
-
 		// $('#instaList').remove();
 
 	    $.ajax({
@@ -33,8 +31,7 @@ console.log("JQUERY Page Init");
         	} // end success function
         	
         }); // end ajax call
-    	
-  	
+
   	}; // end instagram populate 
 
 	var theSubmit = function(){
