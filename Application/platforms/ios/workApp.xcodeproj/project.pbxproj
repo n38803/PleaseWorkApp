@@ -5,7 +5,6 @@
 	};
 	objectVersion = 46;
 	objects = {
-
 /* Begin PBXBuildFile section */
 		1D3623260D0F684500981E51 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* AppDelegate.m */; };
 		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
@@ -51,6 +50,7 @@
 		D4A0D8761607E02300AEF8BB /* Default-568h@2x~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = D4A0D8751607E02300AEF8BB /* Default-568h@2x~iphone.png */; };
 		DD393A5C3E5542A2AB7175B5 /* CDVReachability.m in Sources */ = {isa = PBXBuildFile; fileRef = FE95480F3EE44180B4A4E6FE /* CDVReachability.m */; };
 		F840E1F1165FE0F500CFE078 /* config.xml in Resources */ = {isa = PBXBuildFile; fileRef = F840E1F0165FE0F500CFE078 /* config.xml */; };
+		F6853FB0954D4CE099296E58 /* CDVAccelerometer.m in Sources */ = {isa = PBXBuildFile; fileRef = CCDC6E691504419593868772 /* CDVAccelerometer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -128,6 +128,8 @@
 		DDB6DCED2E1949388BEA40C1 /* CDVDevice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CDVDevice.m; path = ../../../../plugins/org.apache.cordova.device/src/ios/CDVDevice.m; sourceTree = "<group>"; };
 		F840E1F0165FE0F500CFE078 /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = config.xml; path = workApp/config.xml; sourceTree = "<group>"; };
 		FE95480F3EE44180B4A4E6FE /* CDVReachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CDVReachability.m; path = "../../../../plugins/org.apache.cordova.network-information/src/ios/CDVReachability.m"; sourceTree = "<group>"; };
+		CCDC6E691504419593868772 /* CDVAccelerometer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "CDVAccelerometer.m"; path = "org.apache.cordova.device-motion/CDVAccelerometer.m"; sourceTree = "<group>"; fileEncoding = 4; };
+		4F188C0091614702B5304052 /* CDVAccelerometer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "CDVAccelerometer.h"; path = "org.apache.cordova.device-motion/CDVAccelerometer.h"; sourceTree = "<group>"; fileEncoding = 4; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -285,6 +287,8 @@
 				2BD8907FD1C2480180A9DB53 /* CDVNotification.h */,
 				DDB6DCED2E1949388BEA40C1 /* CDVDevice.m */,
 				CD39F5C0366840738CBAE542 /* CDVDevice.h */,
+				CCDC6E691504419593868772 /* CDVAccelerometer.m */,
+				4F188C0091614702B5304052 /* CDVAccelerometer.h */,
 			);
 			name = Plugins;
 			path = workApp/Plugins;
@@ -359,7 +363,7 @@
 		29B97313FDCFA39411CA2CEA /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0460;
+				LastUpgradeCheck = 460;
 			};
 			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "workApp" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -458,6 +462,7 @@
 				463E832E1D65466487F48096 /* CDVNotification.m in Sources */,
 				B0C1BFB9CB9D4166ABEB9F1F /* CDVDevice.m in Sources */,
 				CD88B9EC17F535460098EFCF /* CDVCompass.m in Sources */,
+				F6853FB0954D4CE099296E58 /* CDVAccelerometer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
