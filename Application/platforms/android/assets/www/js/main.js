@@ -164,19 +164,25 @@ document.addEventListener("deviceready", onDeviceReady, false);
 	}; // end connections function
 
 	var beep = function() {
-
-		console.log("Sound Notification");
        	
-       	navigator.notification.alert('You have enabled Sound Notifications!', soundDismiss, 'ALERT!', 'Dismiss'); 
+       	navigator.notification.alert(
+       		'You have enabled Sound Alerts!',
+       	 	'ALERT', 
+       	 	'Dismiss'
+       	 );  // end notification alert
+       	 
 		navigator.notification.beep(3);
 
 	};// end sound notifications function 
 
 	var vibrate = function() {
 
-		console.log("Vibrate Notification");
+       	navigator.notification.alert(
+       		'You have enabled Vibration!',
+       	 	'ALERT', 
+       	 	'Dismiss'
+       	 );  // end notification alert
        	
-       	navigator.notification.alert('You have enabled Vibration!', vibrateDismiss, 'ALERT!', 'Dismiss'); 
        	navigator.notification.vibrate(2000);
 
 	};// end vibration notifications function 
