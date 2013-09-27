@@ -154,6 +154,7 @@ document.addEventListener("deviceready", onDeviceReady, false);
     	states[Connection.CELL_2G]  = 'Cell 2G connection';
     	states[Connection.CELL_3G]  = 'Cell 3G connection';
     	states[Connection.CELL_4G]  = 'Cell 4G connection';
+    	states[Connection.CELL]  	= 'This function is unavailable on iOS';
     	states[Connection.NONE]     = 'No network connection';
 
 		$("#c-type").html("Current Connection: <em>" + states[networkState] + "</em>");

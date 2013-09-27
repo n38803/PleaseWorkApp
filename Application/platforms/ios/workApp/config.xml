@@ -11,7 +11,16 @@
     <feature name="LocalStorage">
         <param name="ios-package" value="CDVLocalStorage" />
     </feature>
-    <access origin="http://127.0.0.1*" />
+    <feature name="NetworkStatus">
+   	 <param name="ios-package" value="CDVConnection" />
+	</feature>
+	<feature name="Compass">
+    	<param name="ios-package" value="CDVLocation" />
+	</feature>
+	<feature name="Notification">
+    	<param name="ios-package" value="CDVNotification" />
+	</feature>
+    <access origin="*" />
     <preference name="KeyboardDisplayRequiresUserAction" value="true" />
     <preference name="SuppressesIncrementalRendering" value="false" />
     <preference name="UIWebViewBounce" value="true" />
