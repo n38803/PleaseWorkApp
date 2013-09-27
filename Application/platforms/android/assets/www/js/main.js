@@ -189,7 +189,7 @@ document.addEventListener("deviceready", onDeviceReady, false);
                     	
 	var loadInfo = function () {
 		$("#d-type").html(
-			"<li>Device Name: <em>" + device.name + "</em></li>" +
+			"<li>Device Name: <em>" + device.model + "</em></li>" +
 			"<li>Platform Type: <em>" + device.platform + "</em></li>" +
 			"<li>Device UUID: <em>" + device.uuid + "</em></li>" +
 			"<li>Version Info: <em>" + device.version + "</em></li>"

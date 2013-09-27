@@ -53,6 +53,7 @@
 		47310877A32941B69CB5B998 /* CDVVibration.m in Sources */ = {isa = PBXBuildFile; fileRef = C156A3EED78646D891A85B34 /* CDVVibration.m */; };
 		463E832E1D65466487F48096 /* CDVNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C0C03B4C8E14804A0050FE4 /* CDVNotification.m */; };
 		0F066684BA08438481365234 /* CDVNotification.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 84121EB0CF3C418584C7B502 /* CDVNotification.bundle */; };
+		B0C1BFB9CB9D4166ABEB9F1F /* CDVDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = DDB6DCED2E1949388BEA40C1 /* CDVDevice.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -133,6 +134,8 @@
 		5C0C03B4C8E14804A0050FE4 /* CDVNotification.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "CDVNotification.m"; path = "org.apache.cordova.dialogs/CDVNotification.m"; sourceTree = "<group>"; fileEncoding = 4; };
 		2BD8907FD1C2480180A9DB53 /* CDVNotification.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "CDVNotification.h"; path = "org.apache.cordova.dialogs/CDVNotification.h"; sourceTree = "<group>"; fileEncoding = 4; };
 		84121EB0CF3C418584C7B502 /* CDVNotification.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = "CDVNotification.bundle"; path = "CDVNotification.bundle"; sourceTree = "<group>"; };
+		DDB6DCED2E1949388BEA40C1 /* CDVDevice.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "CDVDevice.m"; path = "org.apache.cordova.device/CDVDevice.m"; sourceTree = "<group>"; fileEncoding = 4; };
+		CD39F5C0366840738CBAE542 /* CDVDevice.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "CDVDevice.h"; path = "org.apache.cordova.device/CDVDevice.h"; sourceTree = "<group>"; fileEncoding = 4; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -294,6 +297,8 @@
 				47E586698DE14335A0C44D43 /* CDVVibration.h */,
 				5C0C03B4C8E14804A0050FE4 /* CDVNotification.m */,
 				2BD8907FD1C2480180A9DB53 /* CDVNotification.h */,
+				DDB6DCED2E1949388BEA40C1 /* CDVDevice.m */,
+				CD39F5C0366840738CBAE542 /* CDVDevice.h */,
 			);
 			name = Plugins;
 			path = "workApp/Plugins";
@@ -469,6 +474,7 @@
 				DD393A5C3E5542A2AB7175B5 /* CDVReachability.m in Sources */,
 				47310877A32941B69CB5B998 /* CDVVibration.m in Sources */,
 				463E832E1D65466487F48096 /* CDVNotification.m in Sources */,
+				B0C1BFB9CB9D4166ABEB9F1F /* CDVDevice.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
