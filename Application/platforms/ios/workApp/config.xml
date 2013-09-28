@@ -11,15 +11,26 @@
     <feature name="LocalStorage">
         <param name="ios-package" value="CDVLocalStorage" />
     </feature>
+<<<<<<< HEAD
     <feature name="Notification">
     	<param name="ios-package" value="CDVNotification" />
 	</feature>
     <feature name="NetworkStatus">
     	<param name="ios-package" value="CDVConnection" />
+=======
+    <feature name="NetworkStatus">
+   	 <param name="ios-package" value="CDVConnection" />
+>>>>>>> master
 	</feature>
 	<feature name="Compass">
     	<param name="ios-package" value="CDVLocation" />
 	</feature>
+<<<<<<< HEAD
+=======
+	<feature name="Notification">
+    	<param name="ios-package" value="CDVNotification" />
+	</feature>
+>>>>>>> master
     <access origin="*" />
     <preference name="KeyboardDisplayRequiresUserAction" value="true" />
     <preference name="SuppressesIncrementalRendering" value="false" />
