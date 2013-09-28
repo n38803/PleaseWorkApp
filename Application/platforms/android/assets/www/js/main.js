@@ -116,13 +116,16 @@ document.addEventListener("deviceready", onDeviceReady, false);
 
     function soundDismiss(){
     
-    	console.log("Notification Beep");	
+    	console.log("Notification Beep");
+    	navigator.notification.beep(3);	
 
     }; // end sound dismiss  
     
     function vibrateDismiss(){
     
     	console.log("Notification Vibrate");
+    	navigator.notification.vibrate(2000);
+    	
 
     }; // end sound dismiss 
 
@@ -176,11 +179,11 @@ document.addEventListener("deviceready", onDeviceReady, false);
        	
        	navigator.notification.alert(
        		'You have enabled Sound Alerts!',
+       		soundDismiss,
        	 	'ALERT', 
        	 	'Dismiss'
        	 );  // end notification alert
        	 
-		navigator.notification.beep(3);
 
 	};// end sound notifications function 
 
@@ -188,11 +191,11 @@ document.addEventListener("deviceready", onDeviceReady, false);
 
        	navigator.notification.alert(
        		'You have enabled Vibration!',
+       		vibrateDismiss,
        	 	'ALERT', 
        	 	'Dismiss'
        	 );  // end notification alert
-       	
-       	navigator.notification.vibrate(2000);
+       
 
 	};// end vibration notifications function 
                     	
